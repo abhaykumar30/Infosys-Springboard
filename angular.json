@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Sample": {
+    "Task-manager": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Sample:build:production"
+              "buildTarget": "Task-manager:build:production"
             },
             "development": {
-              "buildTarget": "Sample:build:development"
+              "buildTarget": "Task-manager:build:development"
             }
           },
           "defaultConfiguration": "development"
