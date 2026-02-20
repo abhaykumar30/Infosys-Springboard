@@ -1,0 +1,76 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h3 {
+    text-align: center;
+    background: #3f3f3f;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.task-list {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.task-card {
+    background: white;
+    color: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.task-card strong {
+    font-size: 16px;
+    color: #222;
+}
+
+.task-card p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.task-card p:last-child {
+    font-size: 12px;
+    color: #d06969;
+    font-weight: 500;
+}
+
+.task-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+}
+
+.task-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.edit-btn {
+  background: rgba(136, 136, 213, 0.732);
+}
+
+.delete-btn {
+  background: #d32f2f;
+}

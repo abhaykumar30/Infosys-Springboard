@@ -1,0 +1,32 @@
+<form [formGroup]="form" (ngSubmit)="OnSubmit()">
+    <h2>Create New Task</h2>
+
+    <div>
+        <label>Task Title</label>
+        <input formControlName="title" />
+        <span *ngIf="form.get('title')?.invalid && form.get('title')?.touched">
+            Title is required (Min 3 characters)
+        </span>
+    </div>
+
+    <div>
+        <label>Description</label>
+        <textarea formControlName="description"></textarea>
+        <span *ngIf="form.get('description')?.invalid && form.get('description')?.touched">
+            Description is required
+        </span>
+    </div>
+
+    <div>
+        <label>Date</label>
+        <input type="date" formControlName="date" />
+    </div>
+
+    <div>
+        <label>Time</label>
+        <input type="time" formControlName="time" />
+    </div>
+
+    <button type="submit">Submit</button>
+
+</form>

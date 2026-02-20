@@ -1,0 +1,12 @@
+<header class="header">
+    Task Management System
+</header>
+
+<div class="Status-Colum">
+    <app-status [status]="'New Task'"></app-status>
+    <app-status [status]="'In Progress'"></app-status>
+    <app-status [status]="'Completed'"></app-status>
+    <app-status [status]="'Delivered'"></app-status>
+</div>
+<button (click)="openCreateTask()">+ New Task</button>
+    
